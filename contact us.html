@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function func4() {
+    var pwd=document.getElementById("pwd").value;
+	var cnfwd=document.getElementById("cnfwd").value;
+
+if(pwd!=cnfwd){
+	alert("Password and Confirm Password do not match");
+ }
+ else{
+		var b=confirm("Do you wish to submit?");
+ }
+if(b){
+	alert("The form is submitted");
+}
+else{
+	alert("The form is cancelled");
+ }
+}
+
+</script>
+<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body id="body">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+	    <li><a href="products.html">Products</a></li>
+		<li><a href="about us.html">About us</a></li>
+		<li><a href="contact us.html#contact firm">Contact us</a></li>
+	</ul>
+	<div class="login-box"> 
+		<h1> Form</h1>
+	<div class="textbox">
+	<form action="/action_page.php" method="post" >
+		<fieldset>
+			<legend> Form:</legend><br>
+	First Name:<input type="text" id="First-name" pattern="[a-zA-z]" required><br><br>
+		Last Name:<input type="text" id="Lst name" pattern="[a-zA-z]" required><br><br>
+		Address:<input type="text" id="addressname" pattern="[a-zA-z]" required><br><br>
+		Email:<input type="text" id="email"name="Email" pattern="[a-z0-9.%+-]+@[a-z0-9.-]+.[a-z]"><br><br>
+		User Id:<input type="text" id="user" name="User id" required><br><br>
+		Password:<input type="Password" id="pwd" pattern="[a-z]"><br><br>
+		Confirm Password:<input type="Password" id="cnfwd"><br><br>
+		<input type="button" name="btn" value="Submit" onclick="func4()"><br><br>
+	</div>
+	</div>
+</fieldset>
+</form>
+</body>
+</html>
